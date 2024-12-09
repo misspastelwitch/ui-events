@@ -33,3 +33,74 @@ interaction.addEventListener('animationend', jumpHandler)
 
 // Stap 3: (Callback functie met) classList (.toggle(), .add(), etc.)
 // bibberLink.classList.toggle...
+
+
+// Event 1
+let frontend = document.querySelector('a:nth-of-type(1)')
+window.addEventListener('keydown', changecolorHandler)
+function changecolorHandler(event) {
+  if (event.keyCode === 70) {
+    frontend.classList.toggle('changecolor')
+  }
+}
+frontend.addEventListener('animationend', changecolorHandler)
+
+// Event 2
+let design = document.querySelector('a:nth-of-type(2)')
+design.addEventListener('mouseup', mouseupHandler)
+function mouseupHandler(event) {
+  if (event.mouseup = true) {
+  design.classList.toggle('mouseup')
+}
+}
+design.addEventListener('animationend', mouseupHandler)
+
+// Event 3
+let and = document.querySelector('a:nth-of-type(3)')
+and.addEventListener('mousemove', mousemoveHandler)
+function mousemoveHandler(event) {
+  if (event.mousemove = true) {
+  and.classList.toggle('mousemove')
+}
+}
+and.addEventListener('animationend', mousemoveHandler)
+
+// Event 4
+let development = document.querySelector('a:nth-of-type(4)')
+development.addEventListener('mouseenter', mouseenterHandler)
+function mouseenterHandler(event) {
+  if (event.mouseenter = true) {
+  development.classList.toggle('mouseenter')
+}
+}
+development.addEventListener('animationend', mouseenterHandler)
+
+// Event 5
+let sprint = document.querySelector('a:nth-of-type(5)')
+sprint.addEventListener('click', clickHandler)
+function clickHandler(event) {
+  if (event.click = true) {
+    sprint.classList.toggle('click')
+}
+}
+sprint.addEventListener('animationend', clickHandler)
+
+// Event 6
+let fix = document.querySelector('a:nth-of-type(6)')
+window.addEventListener('scroll', scrollHandler)
+function scrollHandler(event) {
+  if (event.scroll = true) {
+    fix.classList.toggle('scroll')
+}
+}
+fix.addEventListener('animationend', scrollHandler)
+
+// Event 7
+let the = document.querySelector('a:nth-of-type(7)')
+the.addEventListener('dblclick', dblclickHandler)
+function dblclickHandler(event) {
+  if (event.dblclick = true) {
+    the.classList.toggle('dblclick')
+}
+}
+the.addEventListener('animationend', dblclickHandler)

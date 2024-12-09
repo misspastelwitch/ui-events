@@ -40,7 +40,8 @@ a {
 
 /* UI Event Classes */
 
-/* Jump animation on the interaction link */
+
+/* Event 12*/
 a:nth-of-type(12) {
   position: relative;
   background: var(--highlight-secondary);
@@ -81,3 +82,258 @@ a:nth-of-type(12) {
 
 
 /* Hieronder komen jouw animaties */
+
+/*  Event 1*/
+a:nth-of-type(1) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.changecolor {
+  animation-name: changecolor;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+ @keyframes changecolor {
+  0% {
+    background-color:#7e5dca;
+  }
+  25% {
+    background-color: #7154b7;
+    }
+  50% {
+  background-color: #533a8d;
+  }
+  75% {
+    background-color: #7154b7;
+  }
+  100% {
+    background-color: #7e5dca;
+  }
+}
+
+/*  Event 2*/
+a:nth-of-type(2) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.mouseup {
+  animation-name: mouseup;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+ @keyframes mouseup {
+  50% {
+    background-color:#304887;
+  }
+  100% {
+    background-color:#5dafca;
+  }
+
+}
+
+/*  Event 3*/
+a:nth-of-type(3) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.mousemove {
+  animation-name: mousemove;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+ @keyframes mousemove {
+
+  0% {
+    background-color: #d6cdeb;
+  }
+  35% {
+    background-color: #ccfbee;
+  }
+  50% {
+    background-color: #7ce7c9;
+  }
+  75% {
+    background-color: #5dafca;
+  }
+}
+
+/*  Event 4*/
+a:nth-of-type(4) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.mouseenter {
+  animation-name: mouseenter;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+}
+
+ @keyframes mouseenter {
+
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1, 0.95);
+  }
+  30% {
+    transform: scale(1, 0.9);
+  }
+  50% {
+    transform: scale(1, 0.85);
+  }
+  70% {
+    transform: scale(1, 0.9);
+  }
+  90% {
+    transform: scale(1, 0.95);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/*  Event 5*/
+a:nth-of-type(5) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.click {
+  animation-name: click;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+ @keyframes click {
+
+  0% {
+    transform: scale(1, 1);
+  }
+  10% {
+    transform: scale(1, 0);
+  }
+  30% {
+    transform: scale(1, 0.9);
+  }
+  50% {
+    transform: scale(1, 0.85);
+  }
+  70% {
+    transform: scale(1, 0.9);
+  }
+  90% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+/*  Event 6*/
+a:nth-of-type(6) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.scroll {
+  animation-name: scroll;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+ @keyframes scroll {
+
+  10% {
+    rotate: 20deg;
+  }
+  20% {
+    rotate: 45deg;
+  }
+  30% {
+    rotate: 90deg;
+  }
+  40% {
+    rotate: 135deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  60% {
+    rotate: 225deg;
+  }
+  80% {
+    rotate: 270deg;
+  }
+  90% {
+    rotate: 315deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+body {
+  height: 150vh;
+}
+
+/*  Event 7*/
+a:nth-of-type(7) {
+  position: relative;
+  background: var(--highlight-secondary);
+  color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.dblclick {
+  animation-name: dblclick;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+ @keyframes dblclick {
+
+  15% {
+    transform: translateX(2.5px)
+  }
+  25% {
+    transform: translateX(5px)
+  }
+  35% {
+    transform: translateX(2.5px)
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  65% {
+    transform: translateX(-2.5px)
+  }
+  75% {
+    transform: translateX(-5px)
+  }
+  90% {
+    transform: translateY(-2.5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
